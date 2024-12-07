@@ -119,7 +119,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/irblack.toml"
+    "~/.config/alacritty/kanagawa-paper.toml"
 ]
 
 [terminal]
