@@ -169,7 +169,7 @@ gaps outer 2
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/skull.jpg
+exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/mono.png
 
 exec_always --no-startup-id xrandr -s 1920x1080
 
