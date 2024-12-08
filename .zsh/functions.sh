@@ -28,7 +28,7 @@ extract() {
     *.tar.gz) uncompress $1 ;;
     *.tar.lz) uncompress $1 ;;
     *.war) uncompress $1 ;;
-    *.xz) uncompress $1 ;;
+    *.xz) xz -d -v $1 ;;
     *) echo "'$1' cannot be extracted via extract()" ;;
     esac
   else
