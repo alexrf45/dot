@@ -2,7 +2,7 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/.pulumi/bin:$HOME/.cargo/bin/:$HOME/.n
 
 export RUSTUP_HOME="$HOME/.rustup"
 export CARGO_HOME="$HOME/.cargo"
-
+export DISABLE_AUTO_TITLE='true'
 #aws-cli ENV
 export AWS_REGION=us-east-1
 export AWS_VAULT_BACKEND=pass
