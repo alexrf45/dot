@@ -7,7 +7,7 @@ return {
   config = function()
     require("themify").setup({
       -- Your list of colorschemes.
-
+      "0xstepit/flow.nvim",
       "folke/tokyonight.nvim",
       "kvrohit/substrata.nvim",
       { "bluz71/vim-moonfly-colors", branch = "master" },

@@ -7,10 +7,10 @@
 #  $character
 # """
 format = """
-[╭─k8s──────❯](bold yellow) $kubernetes
-[┣─cloud────❯](bold yellow) $aws $gcloud $azure
-[┣─project──❯](bold yellow) $directory$git_branch $git_status $git_commit $golang$terraform$docker_context$python$docker_context$nodejs
-[╰](bold yellow)$character 
+[╭─k8s──────❯](bold white) $kubernetes
+[┣─cloud────❯](bold white) $aws $gcloud $azure
+[┣─project──❯](bold white) $directory$git_branch $git_status $git_commit $golang$terraform$docker_context$python$docker_context$nodejs
+[╰](bold white)$character 
 """
 
 # Wait 10 milliseconds for starship to check files under the current directory.
