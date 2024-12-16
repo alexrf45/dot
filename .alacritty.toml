@@ -119,7 +119,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/gruv.toml"
+    "~/.config/alacritty/gruv-2.toml"
 ]
 
 [terminal]
