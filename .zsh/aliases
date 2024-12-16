@@ -3,9 +3,10 @@ alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
 alias h='cd ~'
 alias v='nvim'
-alias edit='vim'
+alias edit='nvim'
 alias c="clear"
-alias la='ls -lathr'
+alias ls='lla --icons'
+alias lsg='lla -G'
 alias get="curl -O -L"
 alias dir='exa'
 alias cat='bat'
@@ -23,9 +24,8 @@ alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock 
 
 alias blog='scp ~/pico/blog/* prose.sh:/'
 alias aegis-dev='tmuxp load ~/.config/tmuxp/aegis.yaml'
-
+alias home-lab='tmuxp load ~/.config/tmuxp/home.yaml'
 #buku for bookmarks
-alias links='brave $(buku -p -f 40 | fzf | cut -f1)'
 
 #note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
@@ -69,20 +69,25 @@ alias gla='gl --all'
 alias yeskube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = true/disabled = false/;}' ~/.config/starship.toml"
 alias nokube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = false/disabled = true/;}' ~/.config/starship.toml"
 alias context='kubectx'
+
 alias kn='kubens'
 alias k='kubectl'
 alias ka='kubectl apply'
 alias kaf='kubectl apply -f'
 alias kc='kubectl create'
-alias create='kubectl create -f'
+alias kcf='kubectl create -f'
 
 alias kd='kubectl delete'
 alias kg='kubectl get'
+
 alias kgns='kubectl get ns'
 alias kgn='kubectl get nodes'
-alias kl='kubectl logs'
 alias kgp='kubectl get pods'
+
+alias kl='kubectl logs'
+
 alias kcctx='k config get-contexts -o name'
+
 alias ksercrets='kubectl describe secrets'
 
 #dot files
@@ -107,11 +112,9 @@ alias cost='infracost breakdown --path=.'
 alias docs='terraform-docs markdown table --hide modules --sort-by required --output-file README.md --output-mode inject ../'
 
 #aws-vault
-alias awsv-s='aws-vault exec Administrator'
-alias awsv='aws-vault exec Administrator --no-session'
-alias acct-adm-s='aws-vault exec account-admin --duration=2h'
-alias acct-adm='aws-vault exec account-admin --no-session'
-alias acct-adm-ui='aws-vault login account-admin'
+alias av='aws-vault exec $1 --duration=2h'
+alias avs='aws-vault exec $1 --no-session'
+alias avu='aws-vault login $1'
 
 #aws cli aliases
 
@@ -120,10 +123,10 @@ alias ec2-check='aws ec2 describe-instances --query "Reservations[*].Instances[*
 alias s3-list="aws s3api list-buckets | jq -r '.Buckets[].Name'"
 alias vpc-check='aws ec2 --output text --query "Vpcs[*].{VpcId:VpcId,Name:Tags[?Key=='Environment'].Value|[0],CidrBlock:CidrBlock}" describe-vpcs'
 alias s3-delete='aws s3api delete-bucket --bucket ${BUCKET}'
-alias iam-access-id-admin='aws iam get-user --user-name administrator | jq -r ".User | .UserId"'
+alias iam-access-id-admin='aws iam get-user --user-name account-admin | jq -r ".User | .UserId"'
 #cloud-nuke aws
 alias aws-nuke='cloud-nuke aws --exclude-resource-type s3 --exclude-resource-type iam --exclude-resource-type secretsmanager --exclude-resource-type dynamodb'
-alias aws-nuke-view-us-east-1='cloud-nuke inspect-aws --region us-east-1'
+alias aws-inspect='cloud-nuke inspect-aws'
 
 alias aws-services-list='~/.config/scripts/./services.sh'
 alias aws-services-cost='~/.config/scripts/service-cost.sh'
@@ -140,7 +143,8 @@ alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /
 
 #docker
 alias d='docker'
-alias dpwd='docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" -u "$(id -u):$(id -g)" -it'
+alias db='docker build'
+alias ds='docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" -u "$(id -u):$(id -g)" -it'
 alias dimls='docker image ls'
 alias dim='docker image'
 alias dc='docker container'
@@ -151,9 +155,6 @@ alias portainer='docker run --name portainer -p 9000:9000 -d -v "/var/run/docker
 alias portainerstop='docker stop portainer'
 alias portainerstart='docker start portainer'
 
-
-#docker build
-alias build='docker build'
 
 #docker compose
 alias d-up='docker-compose up -d'
@@ -172,5 +173,3 @@ alias ap='ansible-playbook'
 
 #gcp
 alias gcloud='docker run --rm --volumes-from gcloud-config gcr.io/google.com/cloudsdktool/google-cloud-cli gcloud'
-alias htb='sudo openvpn ~/.config/openvpn/lab_fr3dzz.ovpn'
-alias echo-ctf='sudo openvpn ~/.config/openvpn/echoCTF.ovpn'

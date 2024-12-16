@@ -19,6 +19,7 @@ for file in $HOME/.zsh/*; do
     source "$file"
 done
 
+
 #plugins
 # plugins=(
 #   colorize
@@ -30,19 +31,16 @@ done
 
 #source $ZSH/oh-my-zsh.sh
 
-#old config 
-#
-fpath=(/tmp/zsh-completions/src $fpath)
+fpath=(/tmp/zsh-completions/src $fp)
+
+eval $(ssh-agent -s) &> /dev/null
+ssh-add ~/.ssh/lab >/dev/null 2>&1
+ssh-add ~/.ssh/home >/dev/null 2>&1
+ssh-add ~/.ssh/dev >/dev/null 2>&1
+ssh-add ~/.ssh/vps >/dev/null 2>&1
 
 
 #persistant ssh agent
-eval $(ssh-agent) &> /dev/null
-
-ssh-add ~/.ssh/lab >/dev/null 2>&1
-ssh-add ~/.ssh/home >/dev/null 2>&1
-ssh-add ~/.ssh/fr3d >/dev/null 2>&1
-ssh-add ~/.ssh/vps >/dev/null 2>&1
-
 complete -C '/usr/local/bin/aws_completer' aws
 
 . "$HOME/.cargo/env"
@@ -51,4 +49,3 @@ eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
-#zprof
