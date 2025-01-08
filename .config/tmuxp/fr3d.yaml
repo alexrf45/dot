@@ -13,6 +13,3 @@ windows:
   - window_name: dev
     panes:
       - v ~/projects/dev-argo/
-  - window_name: cluster
-    panes:
-      - v ~/memphis-k3s/
