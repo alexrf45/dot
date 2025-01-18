@@ -1,0 +1,96 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# format = """
+#   $directory$git_branch$git_status$git_commit$terraform$python
+#  $azure$gcloud$aws$kubernetes
+#  $character
+# """
+format = """
+[╭─k8s──────❯](bold white) $kubernetes
+[┣─cloud────❯](bold white) $aws $gcloud $azure
+[┣─project──❯](bold white) $directory$git_branch $git_status $git_commit $golang$terraform$docker_context$python$docker_context$nodejs
+[╰](bold white)$character 
+"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 5
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+[directory]
+read_only = " 🔒"
+home_symbol = "~"
+truncation_length = 3
+truncate_to_repo = true # truncates directory to root folder if in github repo
+style = " cyan"
+
+
+[character]
+success_symbol = " [>](bold yellow)"
+error_symbol = " [×](bold red)"
+
+
+[line_break]
+disabled = false
+
+[python]
+symbol = "py "
+version_format = "v${raw}"
+pyenv_version_name = true
+style = "bold italic yellow"
+
+[aws]
+format = '[ aws: $profile/$region ]($style)'
+style = " italic #bf5700"
+[aws.region_aliases]
+us-east-1 = "us-east-1"
+[aws.profile_aliases]
+Admin = 'Administrator'
+account-admin = 'acct-adm'
+
+[gcloud]
+disabled = false
+format = ' gcloud: [$symbol$account(@$domain)(\($project\))]($style) '
+style = "#FEFB61"
+
+[git_branch]
+format = " [ on $symbol $branch]($style) "
+style = "bold green"
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+untracked = "🛤️  ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️  ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️  ×${count} "
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[git_commit]
+commit_hash_length = 5
+style = "bold yellow"
+
+[pulumi]
+symbol = "🎁"
+format = " [$symbol $stack]($style)"
+disabled = false
+
+[terraform]
+format = " [🔧 $version]($style) "
+
+[kubernetes]
+format = '[k3s: ($cluster in )$context \($namespace\)](bold yellow) '
+disabled = true
+
+[azure]
+disabled = false
+format = "on [$symbol($subscription)]($style) "
+symbol = "azure: "
+style = "bold blue"
