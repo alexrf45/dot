@@ -90,10 +90,10 @@ alias kcctx='k config get-contexts -o name'
 alias ksercrets='kubectl describe secrets'
 
 #dot files
-alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
-alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
-alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'
-alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER push'
+alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias status='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME status'
+alias commit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -am'
+alias push='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push'
 
 #terraform
 alias tf='terraform'
