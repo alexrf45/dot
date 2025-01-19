@@ -158,14 +158,14 @@ bindsym $mod+r mode "resize"
 
 # i3-gaps
 for_window [class="^.*"] border pixel 0
-gaps inner 1
+gaps inner 6
 gaps outer 2
 
 #exec_always --no-startup-id pulseaudio --start --daemonize --high-priority=true
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/gruvbox_arch.png
+exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/kanagawa.jpg
 
 #exec_always --no-startup-id xrandr -s 1920x1080
 

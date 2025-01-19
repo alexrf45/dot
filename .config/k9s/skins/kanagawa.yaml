@@ -3,18 +3,18 @@
 # -----------------------------------------------------------------------------
 
 # Styles...
-foreground: &foreground "#d4be98"
-background: &background "#1d2021"
-current_line: &current_line "#d4be98"
-selection: &selection "#8ec07c"
+foreground: &foreground "#c4b28a"
+background: &background "#181616"
+current_line: &current_line "#c4b28a"
+selection: &selection "#c5c9c5"
 comment: &comment "#79740e"
-cyan: &cyan "#458588"
-green: &green "#98971a"
-orange: &orange "#fe8019"
-blue: &blue "#83a598"
-magenta: &magenta "#d3869b"
-red: &red "#fb4934"
-yellow: &yellow "#d79921"
+cyan: &cyan "#7aa89f"
+green: &green "#87a987"
+orange: &orange "#e46876"
+blue: &blue "#7fb4ca"
+magenta: &magenta "#938aa9"
+red: &red "#e46876"
+yellow: &yellow "#e6c384"
 
 # Skin...
 k9s:
