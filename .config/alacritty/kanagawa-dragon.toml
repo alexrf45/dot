@@ -12,6 +12,7 @@ black = "#a6a69c"
 
 [colors.primary]
 background = "#181616"
+#background = "#161616"
 #foreground = "#c5c9c5"
 foreground = "#c4b28a"
 

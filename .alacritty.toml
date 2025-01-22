@@ -122,7 +122,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/kanagawa-dragon.toml"
+    "~/.config/alacritty/monokai.toml"
 ]
 
 [terminal]
