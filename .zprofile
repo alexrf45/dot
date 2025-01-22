@@ -17,7 +17,7 @@ export TERM='xterm-256color'
 export VISUAL=vim
 
 #kubeconfig
-export KUBECONFIG="$HOME/.kube/kubeconfig"
+export KUBECONFIG="$HOME/.kube/config"
 
 
 ## FZF

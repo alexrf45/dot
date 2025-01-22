@@ -32,7 +32,7 @@ source "$HOME/.miniplug/miniplug.zsh"
 
 export MINIPLUG_HOME="$HOME/.miniplug/plugins"
 
-#miniplug plugin 'zsh-users/zsh-autosuggestions'
+miniplug plugin 'zsh-users/zsh-autosuggestions'
 miniplug plugin 'zsh-users/zsh-syntax-highlighting'
 miniplug plugin 'zsh-users/zsh-completions'
 miniplug load
@@ -53,7 +53,12 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 . "$HOME/.cargo/env"
 
+. <(flux completion zsh)
+
+
 eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-#eval "$(starship init zsh)"
+eval "$(direnv hook zsh)"
+
+eval "$(starship init zsh)"

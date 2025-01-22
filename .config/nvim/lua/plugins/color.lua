@@ -28,11 +28,20 @@
 --   end,
 -- }
 
+-- return {
+--   "sho-87/kanagawa-paper.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme kanagawa-paper")
+--   end,
+-- }
+--
 return {
-  "sho-87/kanagawa-paper.nvim",
+  "loctvl842/monokai-pro.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme kanagawa-paper")
+    vim.cmd("colorscheme monokai-pro-spectrum")
   end,
 }
