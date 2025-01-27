@@ -67,7 +67,7 @@ alias gla='gl --all'
 alias yeskube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = true/disabled = false/;}' ~/.config/starship.toml"
 alias nokube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = false/disabled = true/;}' ~/.config/starship.toml"
 alias context='kubectx'
-
+alias shell='kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot -- /bin/bash'
 alias cluster='kubectl config get-clusters'
 alias switch='kubectx'
 alias k='kubectl'
