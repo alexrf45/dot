@@ -8,12 +8,21 @@
 --   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1001 },
 -- }
 --
-return {
+-- return {
+--
+--   "dasupradyumna/midnight.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme midnight")
+--   end,
+-- }
 
-  "dasupradyumna/midnight.nvim",
+return {
+  "audibleblink/hackthebox.vim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme midnight")
+    vim.cmd("colorscheme hackthebox")
   end,
 }

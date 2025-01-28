@@ -1,0 +1,33 @@
+# Put the following lines in your ~/.config/alacritty/alacritty.toml
+
+[colors.primary]
+foreground = "#b5b3aa"
+background = "#000000"
+
+[colors.bright]
+yellow = "#ffffb6"
+magenta = "#ff73fd"
+white = "#fdfbee"
+blue = "#96cbfe"
+cyan = "#c6c5fe"
+black = "#6c6c66"
+red = "#ff6c60"
+green = "#a8ff60"
+
+[colors.cursor]
+cursor = "#b5b3aa"
+text = "#000000"
+
+[colors.selection]
+background = "#484844"
+text = "#b5b3aa"
+
+[colors.normal]
+yellow = "#ffffb6"
+magenta = "#ff73fd"
+white = "#b5b3aa"
+blue = "#96cbfe"
+cyan = "#c6c5fe"
+black = "#000000"
+red = "#ff6c60"
+green = "#a8ff60"

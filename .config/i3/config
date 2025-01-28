@@ -165,7 +165,7 @@ gaps outer 2
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/nix.png
+exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/skull.jpg
 
 bindsym $mod+p exec flameshot gui
 
