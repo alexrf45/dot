@@ -1,8 +1,19 @@
+-- return {
+--   "loctvl842/monokai-pro.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme monokai-pro-spectrum")
+--   end,
+--   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1001 },
+-- }
+--
 return {
-  "loctvl842/monokai-pro.nvim",
+
+  "dasupradyumna/midnight.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme monokai-pro-spectrum")
+    vim.cmd("colorscheme midnight")
   end,
 }

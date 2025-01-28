@@ -15,7 +15,7 @@ k9s:
     # Toggles reactive UI. This option provide for watching on disk artifacts changes and update the UI live  Defaults to false.
     reactive: true
     # By default all contexts wil use the dracula skin unless explicitly overridden in the context config file.
-    skin: kanagawa # => assumes the file skins/dracula.yaml is present in the  $XDG_DATA_HOME/k9s/skins directory
+    skin: black-and-wtf # => assumes the file skins/dracula.yaml is present in the  $XDG_DATA_HOME/k9s/skins directory
     defaultsToFullScreen: false
   skipLatestRevCheck: false
   disablePodCounting: false
