@@ -10,19 +10,14 @@
 --
 -- return {
 --
---   "dasupradyumna/midnight.nvim",
---   lazy = false,
---   priority = 1000,
---   config = function()
---     vim.cmd("colorscheme midnight")
---   end,
--- }
-
 return {
-  "audibleblink/hackthebox.vim",
+  "sainnhe/gruvbox-material",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme hackthebox")
+    -- Optionally configure and load the colorscheme
+    -- directly inside the plugin declaration.
+    vim.g.gruvbox_material_enable_italic = true
+    vim.cmd.colorscheme("gruvbox-material")
   end,
 }
