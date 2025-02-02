@@ -156,7 +156,7 @@ gaps outer 2
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/skull.jpg
+exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/nix.png
 
 exec --no-startup-id i3-msg 'workspace 1; exec alacritty'
 exec --no-startup-id i3-msg 'workspace 1; exec brave'
