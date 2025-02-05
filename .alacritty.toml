@@ -122,7 +122,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/gruv.toml"
+    "~/.config/alacritty/github_dark_high_contrast.toml"
 ]
 
 [terminal]

@@ -26,7 +26,7 @@ alias aegis-dev='tmuxp load ~/.config/tmuxp/aegis.yaml'
 alias home-lab='tmuxp load ~/.config/tmuxp/home.yaml'
 
 #note backup
-alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
+alias brain-backup='aws s3 sync --delete ~/sean/. s3://notes-backup-primary'
 
 #argo repos
 alias prod='cd ~/projects/prod-argo/'
