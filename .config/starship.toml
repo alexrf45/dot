@@ -86,7 +86,7 @@ disabled = false
 format = " [🔧 $version]($style) "
 
 [kubernetes]
-format = '[k8s: ($cluster in )$context \($namespace\)](bold yellow) '
+format = '[k8s: ($cluster in )$context \($namespace\)](dimmed white) '
 disabled = false
 
 [azure]
