@@ -122,7 +122,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/oldworld.toml"
+    "~/.config/alacritty/gruv-material.toml"
 ]
 
 [terminal]

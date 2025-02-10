@@ -3,10 +3,15 @@
 # Preserve your terminal session background color
 # -----------------------------------------------------------------------------
 
+
+white: &white "#c0c8d8"
+
+
 # Skin...
 k9s:
   body:
     bgColor: default
+    fgColor: *white
   prompt:
     bgColor: default
   info:

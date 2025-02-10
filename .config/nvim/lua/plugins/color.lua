@@ -13,10 +13,10 @@
 -- }
 
 return {
-  "dgox16/oldworld.nvim",
+  "RRethy/base16-nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("oldworld")
+    vim.cmd.colorscheme("base16-gruvbox-material-dark-hard")
   end,
 }
