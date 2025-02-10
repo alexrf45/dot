@@ -4,8 +4,8 @@
 # -----------------------------------------------------------------------------
 
 # Styles...
-foreground: &foreground "#ebdbb2"
-background: &background "#272727"
+foreground: &foreground "#ddc7a1"
+background: &background "#202020"
 current_line: &current_line "#ebdbb2"
 selection: &selection "#3c3735"
 comment: &comment "#bdad93"
@@ -15,18 +15,18 @@ orange: &orange "#d79920"
 magenta: &magenta "#b16185"
 blue: &blue "#448488"
 red: &red "#cc231c"
+white: &white "#ddc7a1"
 
 k9s:
   body:
-    fgColor: *foreground
+    fgColor: *comment
     bgColor: *background
-    logoColor: *blue
   prompt:
-    fgColor: *foreground
+    fgColor: *selection
     bgColor: *background
     suggestColor: *orange
   info:
-    fgColor: *magenta
+    fgColor: *green
     sectionColor: *foreground
   help:
     fgColor: *foreground
@@ -39,34 +39,34 @@ k9s:
     bgColor: *background
     buttonFgColor: *foreground
     buttonBgColor: *magenta
-    buttonFocusFgColor: white
+    buttonFocusFgColor: *white
     buttonFocusBgColor: *cyan
     labelFgColor: *orange
     fieldFgColor: *foreground
   frame:
     border:
-      fgColor: *selection
-      focusColor: *current_line
+      fgColor: *background
+      focusColor: *background
     menu:
       fgColor: *foreground
       keyColor: *magenta
       numKeyColor: *magenta
     crumbs:
       fgColor: *foreground
-      bgColor: *comment
+      bgColor: *background
       activeColor: *blue
     status:
-      newColor: *cyan
+      newColor: default
       modifyColor: *blue
       addColor: *green
       errorColor: *red
-      highlightColor: *orange
+      highlightColor: *green
       killColor: *comment
       completedColor: *comment
     title:
       fgColor: *foreground
       bgColor: *background
-      highlightColor: *orange
+      highlightColor: *green
       counterColor: *blue
       filterColor: *magenta
   views:
@@ -81,8 +81,8 @@ k9s:
     table:
       fgColor: *foreground
       bgColor: *background
-      cursorFgColor: "#fff"
-      cursorBgColor: *current_line
+      cursorFgColor: *foreground
+      cursorBgColor: *cyan
       header:
         fgColor: *foreground
         bgColor: *background
