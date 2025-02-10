@@ -1,9 +1,5 @@
 session_name: dev
 windows:
-  - window_name: local
-    layout: tiled
-    panes:
-      -
   - window_name: notes
     layout: tiled
     panes:
@@ -11,4 +7,8 @@ windows:
   - window_name: home-ops
     layout: tiled
     panes:
-      - cd ~/home-ops/ && v
+      - cd ~/home-ops && v
+  - window_name: k9s
+    layout: tiled
+    panes:
+      - k9s
