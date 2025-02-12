@@ -152,16 +152,13 @@ for_window [class="^.*"] border pixel 0
 gaps inner 6
 gaps outer 2
 
-#exec_always --no-startup-id pulseaudio --start --daemonize --high-priority=true
 
 exec_always --no-startup-id vmware-user
 
 exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/gruvbear.jpeg
 
 exec --no-startup-id i3-msg 'workspace 1; exec alacritty'
-exec --no-startup-id i3-msg 'workspace 1; exec brave'
-exec --no-startup-id i3-msg 'workspace 2; exec obsidian'
-exec --no-startup-id i3-msg 'workspace 3; exec spotify'
+#exec --no-startup-id i3-msg 'workspace 1; exec brave'
 
 
 
