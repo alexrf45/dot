@@ -22,8 +22,6 @@ alias download='aria2c'
 #alias taillogin='docker exec tailscaled tailscale --socket /tmp/tailscaled.sock status'
 
 alias blog='scp ~/pico/blog/* prose.sh:/'
-alias aegis-dev='tmuxp load ~/.config/tmuxp/aegis.yaml'
-alias home-lab='tmuxp load ~/.config/tmuxp/home.yaml'
 
 #note backup
 alias brain-backup='aws s3 sync --delete ~/sean/. s3://notes-backup-primary'
@@ -90,10 +88,10 @@ alias kcctx='k config get-contexts -o name'
 alias ksercrets='kubectl describe secrets'
 
 #dot files
-alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias status='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME status'
-alias commit='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -am'
-alias push='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push'
+alias dot='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME'
+alias status='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME status'
+alias commit='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME commit -am'
+alias push='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME push'
 
 #terraform
 alias tf='terraform'
