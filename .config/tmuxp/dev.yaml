@@ -12,3 +12,7 @@ windows:
     layout: tiled
     panes:
       - k9s
+  - window_name: spotify
+    layout: tiled
+    panes:
+      - ncspot
