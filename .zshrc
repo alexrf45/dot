@@ -61,4 +61,4 @@ eval "$(fzf --zsh)"
 
 eval "$(direnv hook zsh)"
 
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"

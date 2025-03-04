@@ -4,9 +4,9 @@ windows:
     layout: tiled
     panes:
       -
-  - window_name: k9s
-    panes:
-      - k9s
+  # - window_name: k9s
+  #   panes:
+  #     - k9s
   # - window_name: prod
   #   panes:
   #     - v ~/projects/prod-argo/
