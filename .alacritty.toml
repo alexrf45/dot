@@ -27,7 +27,7 @@ history = 20000
 normal = { family="Ubuntu Mono" , style = ""}
 #normal = { family="JetBrains Mono" , style = "Bold"}
 #normal = { family="Iosevka Nerd Font Mono", style = "Bold" }
-size = 13
+size = 12
 
 [selection]
 save_to_clipboard = true
@@ -122,7 +122,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/gruvbox.toml"
+    "~/.config/alacritty/bright.toml"
 ]
 
 [terminal]
