@@ -1,15 +1,12 @@
 session_name: fr3d
 windows:
   - window_name: local
-    layout: tiled
     panes:
-      -
-  # - window_name: k9s
-  #   panes:
-  #     - k9s
-  # - window_name: prod
-  #   panes:
-  #     - v ~/projects/prod-argo/
-  # - window_name: dev
-  #   panes:
-  #     - v ~/projects/dev-argo/
+      - cd ~/sean && v
+  - window_name: home-ops
+    panes:
+       - cd ~/home-ops && v
+  - window_name: dev
+    panes:
+       - v ~/projects/dev-argo/
+       -
