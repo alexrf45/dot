@@ -61,7 +61,7 @@ alias gptf='git push --follow-tags'
 alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 alias gl='glog --graph'
 alias gla='gl --all'
-alias k9s='docker run --rm --net=host -it -v $KUBECONFIG:/root/.kube/config quay.io/derailed/k9s:v0.40.0'
+alias k9s='docker run --rm --net=host -it -v $KUBECONFIG:/root/.kube/config quay.io/derailed/k9s:v0.40.10'
 alias yeskube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = true/disabled = false/;}' ~/.config/starship.toml"
 alias nokube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = false/disabled = true/;}' ~/.config/starship.toml"
 alias context='kubectx'
