@@ -1,12 +1,8 @@
 session_name: fr3d
 windows:
-  - window_name: local
+  - window_name: kali
     panes:
-      - cd ~/sean && v
-  - window_name: home-ops
+      - 
+  - window_name: vpn
     panes:
-       - cd ~/home-ops && v
-  - window_name: dev
-    panes:
-       - v ~/projects/dev-argo/
-       -
+       - htb

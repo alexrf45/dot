@@ -28,7 +28,7 @@ done
 
 fpath=(/tmp/zsh-completions/src $fpath)
 
-source "$HOME/.miniplug/miniplug.zsh"
+source "$HOME/.miniplug/plugins/miniplug.zsh"
 
 export MINIPLUG_HOME="$HOME/.miniplug/plugins"
 
@@ -42,9 +42,8 @@ autoload -Uz compinit && compinit
 
 
 eval $(ssh-agent -s) &> /dev/null
-ssh-add ~/.ssh/lab >/dev/null 2>&1
+ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
 ssh-add ~/.ssh/fr3d >/dev/null 2>&1
-ssh-add ~/.ssh/home >/dev/null 2>&1
 ssh-add ~/.ssh/vps >/dev/null 2>&1
 
 
@@ -53,12 +52,9 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 . "$HOME/.cargo/env"
 
-. <(flux completion zsh)
-
 
 eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(direnv hook zsh)"
 
 #eval "$(starship init zsh)"

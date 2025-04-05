@@ -2,7 +2,6 @@ set $mod mod4
 
 font pango:JetBrains Mono  10
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i $HOME/.config/pictures/space.jpg --nofork
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -169,7 +168,7 @@ gaps outer 2
 
 exec_always --no-startup-id vmware-user
 
-exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/mono.png
+exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/gruvbox_arch.png
 
 exec_always --no-startup-id xrandr -s 1920x1080
 

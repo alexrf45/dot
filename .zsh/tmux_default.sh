@@ -6,4 +6,4 @@ tmux_default() {
   fi
 }
 
-tmux_default
+#tmux_default

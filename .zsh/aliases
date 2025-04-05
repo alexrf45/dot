@@ -15,22 +15,13 @@ alias public='curl wtfismyip.com/text'
 alias q='exit'
 alias pdf='zathura'
 alias download='aria2c'
-
 alias blog='scp ~/pico/blog/* prose.sh:/'
-alias aegis-dev='tmuxp load ~/.config/tmuxp/aegis.yaml'
-alias home-lab='tmuxp load ~/.config/tmuxp/home.yaml'
-#buku for bookmarks
 
 #note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
 
-#argo repos
-alias prod='cd ~/projects/prod-argo/'
-alias dev='cd ~/projects/dev-argo/'
-alias homelab='cd ~/home-lab/'
-
-# git
-
+#vpn
+alias htb='sudo openvpn ~/.config/openvpn/lab_fr3dzz.ovpn'
 
 #git
 alias g='git'
@@ -60,8 +51,6 @@ alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s
 alias gl='glog --graph'
 alias gla='gl --all'
 
-alias yeskube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = true/disabled = false/;}' ~/.config/starship.toml"
-alias nokube="sed -i '/^\[kubernetes\]$/,/^\[/{s/^disabled = false/disabled = true/;}' ~/.config/starship.toml"
 alias context='kubectx'
 
 alias kn='kubens'
@@ -85,10 +74,10 @@ alias kcctx='k config get-contexts -o name'
 alias ksercrets='kubectl describe secrets'
 
 #dot files
-alias dot='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER'
-alias status='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER status'
-alias commit='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER commit -am'
-alias push='/usr/bin/git --git-dir=/home/$USER/.cfg/ --work-tree=/home/$USER push'
+alias dot='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME'
+alias status='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME status'
+alias commit='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME commit -am'
+alias push='/usr/bin/git --git-dir=$HOME/.cfg/.git --work-tree=$HOME push'
 
 #terraform
 alias tf='terraform'
