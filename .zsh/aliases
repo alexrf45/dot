@@ -16,6 +16,7 @@ alias q='exit'
 alias pdf='zathura'
 alias download='aria2c'
 alias blog='scp ~/pico/blog/* prose.sh:/'
+alias ua-drop-caches='sudo paccache -rk3; yay -Sc --aur --noconfirm'
 
 #note backup
 alias brain-backup='aws s3 sync --delete ~/notes/. s3://notes-backup-primary'
@@ -50,8 +51,6 @@ alias gptf='git push --follow-tags'
 alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 alias gl='glog --graph'
 alias gla='gl --all'
-
-alias context='kubectx'
 
 alias kn='kubens'
 alias k='kubectl'
