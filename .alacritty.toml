@@ -119,7 +119,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/gruv.toml"
+    "~/.config/alacritty/gruvbox_material_medium_dark.toml"
 ]
 
 [terminal]
