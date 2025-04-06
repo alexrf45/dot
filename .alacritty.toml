@@ -23,8 +23,8 @@ history = 20000
 [font]
 
 #normal = { family="JetBrains Mono" , style = "Bold"}
-normal = { family="Iosevka Nerd Font Mono", style = "Bold" }
-size = 13
+normal = { family="Iosevka Nerd Font Mono", style = "" }
+size = 12
 
 [selection]
 save_to_clipboard = true
