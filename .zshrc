@@ -41,10 +41,10 @@ autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 
 
-eval $(ssh-agent -s) &> /dev/null
-ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
-ssh-add ~/.ssh/fr3d >/dev/null 2>&1
-ssh-add ~/.ssh/vps >/dev/null 2>&1
+# eval $(ssh-agent -s) &> /dev/null
+# ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
+# ssh-add ~/.ssh/fr3d >/dev/null 2>&1
+# ssh-add ~/.ssh/vps >/dev/null 2>&1
 
 
 #persistant ssh agent
@@ -57,4 +57,4 @@ eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"

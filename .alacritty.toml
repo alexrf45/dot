@@ -1,5 +1,8 @@
-
-[terminal.shell]
+#[terminal]
+import = [
+    "~/.config/alacritty/gruvbox_material_medium_dark.toml"
+]
+[shell]
 program = "/bin/zsh"
 
 [env]
@@ -18,12 +21,12 @@ thickness = 0.3
 
 
 [scrolling]
-history = 20000
+history = 10000
 
 [font]
 
-#normal = { family="JetBrains Mono" , style = "Bold"}
-normal = { family="Iosevka Nerd Font Mono", style = "" }
+normal = { family="Ubuntu Mono" , style = "Bold"}
+#normal = { family="Iosevka Nerd Font Mono", style = "" }
 size = 12
 
 [selection]
@@ -117,12 +120,9 @@ key = "End"
 mode = "~Alt"
 mods = "Shift"
 
-[general]
-import = [
-    "~/.config/alacritty/gruvbox_material_medium_dark.toml"
-]
 
-[terminal]
+
+
 
 
 

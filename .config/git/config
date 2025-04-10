@@ -12,3 +12,4 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = /home/fr3d/.config/git/allowed_signers
+	program = /opt/1Password/op-ssh-sign

@@ -166,7 +166,7 @@ gaps outer 2
 
 #exec_always --no-startup-id pulseaudio --start --daemonize --high-priority=true
 
-exec_always --no-startup-id vmware-user
+#exec_always --no-startup-id vmware-user
 
 exec_always --no-startup-id feh --no-fehbg --bg-fill $HOME/.config/pictures/gruvbox_arch.png
 
