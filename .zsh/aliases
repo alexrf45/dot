@@ -1,5 +1,6 @@
 #alias :r='. ~/.zshrc'
 alias :r='exec zsh'
+alias clean-up='paccache -r'
 alias update='sudo pacman -Syyu'
 alias i='sudo pacman -S'
 alias h='cd ~'
