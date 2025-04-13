@@ -26,7 +26,7 @@ history = 20000
 normal = { family="Ubuntu Mono" , style = ""}
 #normal = { family="JetBrains Mono" , style = ""}
 #normal = { family="Iosevka Nerd Font Mono", style = "Bold" }
-size = 12
+size = 10
 
 [selection]
 save_to_clipboard = true

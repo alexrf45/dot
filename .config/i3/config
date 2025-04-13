@@ -2,7 +2,8 @@ set $mod mod4
 
 font pango:JetBrains Mono  10
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i $HOME/.config/pictures/space.jpg --nofork
+#exec --no-startup-id i3lock -i $HOME/.config/pictures/space.jpg --nofork
+bindsym $mod+Shift+e exec i3lock -i $HOME/.config/pictures/gruvbox_outside.png --nofork
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulseaudio set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
