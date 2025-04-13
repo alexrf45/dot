@@ -23,9 +23,8 @@ history = 20000
 
 [font]
 
-#normal = { family="IBM Plex Mono" , style = "Bold"}
-#normal = { family="Ubuntu Mono" , style = ""}
-normal = { family="JetBrains Mono" , style = ""}
+normal = { family="Ubuntu Mono" , style = ""}
+#normal = { family="JetBrains Mono" , style = ""}
 #normal = { family="Iosevka Nerd Font Mono", style = "Bold" }
 size = 12
 

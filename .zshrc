@@ -46,3 +46,4 @@ eval "$(fzf --zsh)"
 #. <(flux completion zsh)
 
 eval "$(starship init zsh)"
+source /home/fr3d/.config/op/plugins.sh

@@ -1,0 +1,16 @@
+[[ssh-keys]]
+item = "Lab"
+vault = "HomeLab"
+
+[[ssh-keys]]
+item = "Lab 2"
+vault = "HomeLab"
+
+[[ssh-keys]]
+item = "vps"
+vault = "HomeLab"
+
+[[ssh-keys]]
+item = "GitHub-alexrf45-new"
+vault = "Personal"
+
