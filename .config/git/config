@@ -1,7 +1,7 @@
 [user]
 	email = fonalex45@gmail.com
 	name = alexrf45
-  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJx9egHleiIEcyK0tzFQOFSXlpAm7LpptCPm+JdbLVVP fr3d"
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL12pfw++v9LFlLvug4OaZ9biScTIq8hcm6uiYM9kO4j
 [init]
 	defaultBranch = main
 [commit]
@@ -12,3 +12,4 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = /home/fr3d/.config/git/allowed_signers
+	program = /opt/1Password/op-ssh-sign
