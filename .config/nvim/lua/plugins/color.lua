@@ -17,6 +17,6 @@ return {
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("base16-darcula")
+    vim.cmd.colorscheme("base16-black-metal-khold")
   end,
 }
