@@ -121,7 +121,7 @@ mods = "Shift"
 
 [general]
 import = [
-    "~/.config/alacritty/gruvbox.toml"
+    "~/.config/alacritty/darcula.toml"
 ]
 
 [terminal]
