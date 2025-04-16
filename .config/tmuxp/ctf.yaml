@@ -4,14 +4,14 @@ windows:
     layout: tiled
     panes:
       - cd ~/notes/notes-vault/ && v
-  - window_name: home-ops
+  - window_name: kali 
     layout: tiled
     panes:
-      - cd ~/home-ops && v
-  - window_name: k9s
+      - 
+  - window_name: vpn
     layout: tiled
     panes:
-      - k9s
+      - htb
   - window_name: spotify
     layout: tiled
     panes:
